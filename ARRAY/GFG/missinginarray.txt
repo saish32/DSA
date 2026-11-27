@@ -1,0 +1,15 @@
+t.c=o(n)
+s.c=o(1)
+
+class Solution {
+    int missingNum(int arr[]) {
+       long n=arr.length+1;
+       long sum=0;
+       for(int num:arr){
+           sum+=num;
+       }
+        long expsum=n*(n+1)/2;
+        
+        return (int)(expsum-sum) ;
+        }
+}

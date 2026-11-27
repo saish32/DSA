@@ -1,0 +1,22 @@
+T.c=0(n2),S.c=null
+class Solution {
+    public void reverse(int[] arr, int i, int j) {
+        while (i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    public void rotate(int[] arr) {
+        int n = arr.length;
+
+        if (n == 0) return;
+
+        reverse(arr, 0, n - 1);
+        reverse(arr,1,n-1);
+        
+    }
+}

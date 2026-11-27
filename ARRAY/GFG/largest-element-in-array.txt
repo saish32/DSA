@@ -1,0 +1,15 @@
+T.c=o(n),S.c=null
+
+class Solution {
+    public static int largest(int[] arr) {
+        int n=arr.length;
+        int max=arr[0];
+        for(int i=0;i<n;i++){
+          if(max<arr[i]){
+              max=arr[i];
+          }
+        }
+        
+        return max;
+    }
+}
